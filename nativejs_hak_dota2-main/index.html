@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style/style.css" />
+    <title>Dota2</title>
+    <link
+      rel="shortcut icon"
+      href="https://cdn.icon-icons.com/icons2/1381/PNG/512/dota2_93574.png"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <!-- modal for registration -->
+    <div id="registrationModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Admin</h2>
+        <form id="registrationForm">
+          <input id="regName" type="text" placeholder="Username" />
+          <input id="regPass" type="password" placeholder="Password" />
+          <button id="regGo" type="submit">Go</button>
+        </form>
+      </div>
+    </div>
+    <!-------------- modal registration finish---------- -->
+    <!-- Navbar start -->
+    <nav class="container">
+      <div class="icondota2">
+        <img src="./style/image/dota-icon-5.jpg" alt="icondot2" />
+        <h2 onclick="window.location.href = 'https://www.dota2.com/home';">
+          DOTA 2
+        </h2>
+        <h2
+          onclick="window.location.href = 'https://www.dota2.com/pastupdates';"
+        >
+          GAME
+        </h2>
+        <h2 onclick="window.location.href = 'https://www.dota2.com/heroes';">
+          HEROES
+        </h2>
+        <h2
+          onclick="window.location.href = 'https://www.dota2.com/news?l=russian';"
+        >
+          NEWS
+        </h2>
+        <h2
+          onclick="window.location.href = 'https://www.dota2.com/esports/summermajor23/watch/15438/312/game1details';"
+        >
+          ESPORTS
+        </h2>
+      </div>
+      <div class="right">
+        <button id="openModalBtn">ADMIN</button>
+        <input id="searchHero" type="text" placeholder="search heroes" />
+      </div>
+    </nav>
+    <!-- navbar finish -->
+    <!-- The video -->
+    <video autoplay muted loop id="myVideo">
+      <source
+        src="./style/video/videoplayback (online-video-cutter.com) (online-video-cutter.com).mp4"
+        type="video/mp4"
+      />
+    </video>
+    <div class="content">
+      <h1>«СОВРЕМЕННЫЙ МНОГОПОЛЬЗОВАТЕЛЬСКИЙ ШЕДЕВР»</h1>
+      <p>DESTRUCTOID...</p>
+      <!-- Use a button to pause/play the video with JavaScript -->
+      <button id="myBtn" onclick="myFunction()">Pause</button>
+    </div>
+    <!-- finish video -->
+    <!-- start page slide heroes -->
+    <section class="game-section">
+      <div class="owl-carousel custom-carousel owl-theme" id="sam2">
+        <div
+          class="item active"
+          style="
+            background-image: url(https://static.wikia.nocookie.net/dota2_gamepedia/images/e/e9/Keenfolk_Turret_Artifact.png/revision/latest?cb=20210729221505);
+          "
+        >
+          <div class="item-desc">
+            <h3>Clockwerk</h3>
+            <p>
+              Притягиваясь ко врагам своим захватным крюком, Clockwerk изолирует
+              жертву и разрывает её на части дезориентирующей шрапнелью.
+              Разведывая поле битвы своими ракетами, он всегда находит цель, на
+              которую можно налететь.
+            </p>
+          </div>
+        </div>
+        <div
+          class="item"
+          style="
+            background-image: url(https://c4.wallpaperflare.com/wallpaper/47/59/782/dota-2-bow-lyralei-windranger-wallpaper-preview.jpg);
+          "
+        >
+          <div class="item-desc">
+            <h3>Windranger</h3>
+            <p>
+              Проворная и ловкая Windranger всегда поджидает подходящего момента
+              для нападения. Она постоянно в движении — даже когда расчищает
+              путь смертоносным выстрелом или связывает врагов, чтобы
+              нашпиговать их стрелами.
+            </p>
+          </div>
+        </div>
+        <div
+          class="item"
+          style="
+            background-image: url(https://images.alphacoders.com/520/520230.jpg);
+          "
+        >
+          <div class="item-desc">
+            <h3>Mirana</h3>
+            <p>
+              Всегда готовая влететь в битву Mirana издалека подыскивает жертву
+              для своей смертоносной стрелы. Она способна скрыть команду от глаз
+              врагов и возглавить охоту на них.
+            </p>
+          </div>
+        </div>
+        <div
+          class="item"
+          style="
+            background-image: url(https://www.wallpaperflare.com/static/682/714/371/lich-dota-2-dota-art-wallpaper.jpg);
+          "
+        >
+          <div class="item-desc">
+            <h3>Lich</h3>
+            <p>
+              Паря над полем битвы, Lich подпитывает свои силы союзными крипами
+              и помогает союзникам своим замедляющим холодом. Если противники по
+              глупости сбились в кучу, то он расправится сразу со всеми своим
+              отскакивающим ультом.
+            </p>
+          </div>
+        </div>
+        <div
+          class="item"
+          style="
+            background-image: url(https://static.wikia.nocookie.net/dota2_gamepedia/images/2/2f/Zeus_Artifact.png/revision/latest?cb=20210728232841);
+          "
+        >
+          <div class="item-desc">
+            <h3>Zeus</h3>
+            <p>
+              Повелитель небес и отец богов видит во всех героях своих буйных,
+              мятежных детей. Неисчислимы свидания со смертными женщинами, где
+              заставала его супруга. Поставила богиня бессмертного перед
+              выбором: «Если нравятся смертные, иди и сам стань среди них.
+              Докажи свою верность, и приму тебя своим мужем бессмертным. Если
+              же нет — иди и умри средь созданий своих».
+            </p>
+          </div>
+        </div>
+        <div
+          class="item"
+          style="
+            background-image: url(https://dota2ok.ru/wp-content/uploads/2021/06/418234687.jpg);
+          "
+        >
+          <div class="item-desc">
+            <h3>OGRE</h3>
+            <p>
+              Благодаря возможности многократно приумножить эффект каждого
+              своего заклинания и толике удачи Ogre Magi способен обратить
+              врагов в пепел или усилить союзников. Но, разумеется, полагаться
+              лишь на удачу — дело неблагодарное…
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!------------------finish page slide heroes---------------->
+    <!------------------- Start Add Heroes modal---------------- -->
+    <button id="openModalBtnAdd">Add</button>
+
+    <div id="addProductModal" class="modal">
+      <div class="modal-content">
+        <button class="closeAdd">&times;</button>
+        <h2>Add Heroes</h2>
+        <form id="addProductForm">
+          <label for="category">Сhose category:</label>
+          <select id="category" name="category">
+            <option value="STRENGTH">STRENGTH</option>
+            <option value="AGILITY">AGILITY</option>
+            <option value="INTELLIGENCE">INTELLIGENCE</option>
+          </select>
+          <input type="text" id="imageAdd" placeholder="Image heroes" />
+          <input type="text" id="productName" placeholder="name Heroes" />
+          <input type="text" id="productPrice" placeholder="Price" />
+          <input type="text" id="infoCard" placeholder="information" />
+          <button type="submit">Save</button>
+        </form>
+      </div>
+    </div>
+    <!----------------------------- Finish Add Heroes modal------------------>
+    <!-- radio button -->
+    <div class="radio-inputs">
+      <label class="radio">
+        <input type="radio" name="radio" id="" checked="" />
+        <span class="name">ALL</span>
+      </label>
+      <label class="radio">
+        <input id="STRENGTH" type="radio" name="radio" />
+        <span class="name">STRENGTH</span>
+      </label>
+
+      <label class="radio">
+        <input id="AGILITY" type="radio" name="radio" />
+        <span class="name">AGILITY</span>
+      </label>
+      <label class="radio">
+        <input id="INTELLIGENCE" type="radio" name="radio" />
+        <span class="name">INTELLIGENCE</span>
+      </label>
+    </div>
+    <!-- radio button end -->
+    <!-- edit modal hero  -->
+    <div id="edit" class="modal">
+      <div class="modal-content">
+        <button class="closeEdit">&times;</button>
+        <h2>edit Heroes</h2>
+        <form id="editProductForm">
+          <input type="text" id="imageEdit" placeholder="Image heroes" />
+          <input type="text" id="editHeroName" placeholder="name Heroes" />
+          <input type="text" id="editHeroPrice" placeholder="Price" />
+          <input type="text" id="infoHeroMod" placeholder="info" />
+          <select id="categoryEdit" name="categoryEdit">
+            <option value="STRENGTH">STRENGTH</option>
+            <option value="AGILITY">AGILITY</option>
+            <option value="INTELLIGENCE">INTELLIGENCE</option>
+          </select>
+
+          <button type="submit" id="editSaveBtn">Save</button>
+        </form>
+      </div>
+    </div>
+    <!-- finish edit modal hero -->
+    <!-- !modal info card -->
+    <div class="modalInfo">
+      <button class="close-modal">Закрыть</button>
+      <p>
+        Герой "Антимаг" является персонажем из популярной компьютерной игры Dota
+        2. Его настоящее имя - Магина. Антимаг - это агилистический герой,
+        специализирующийся на уничтожении маны противников и нанесении урона с
+        помощью своих атак.
+      </p>
+    </div>
+    <!-- !finsish info -->
+    <!-- ! cards hero -->
+    <div class="card_hero_crud">
+      <div class="container_card"></div>
+    </div>
+    <!-- ! end card hero -->
+    <!-- Pagination -->
+    <div class="pagination">
+      <button id="pagBtnPrew">«</button>
+      <div style="display: flex" class="pagination-list"></div>
+      <button id="pagBtnNext">»</button>
+    </div>
+    <!-- Pagination -->
+    <!-----------start img legion-------------------------->
+    <div class="choseHero">
+      <a href="#myAnchor"></a>
+      <img src="./style/image/legion.jpg" alt="" />
+      <span>WHO WILL YOU</span>
+      <span id="spanChose">CHOOSE?</span>
+      <hr />
+    </div>
+    <!------------------------ finish img legion------------------------>
+
+    <script src="./js/main.js"></script>
+    <script src="./js/main2.js"></script>
+  </body>
+</html>

@@ -1,0 +1,554 @@
+body {
+  background-color: black;
+}
+/* navbar */
+.container {
+  position: fixed;
+  top: 0;
+  display: flex;
+  flex-direction: row;
+  z-index: 9;
+}
+.icondota2 {
+  display: flex;
+  margin-left: 20px;
+}
+.container img {
+  height: 80px;
+}
+.container h2 {
+  display: flex;
+  margin-right: 30px;
+  color: #ffffff;
+  font-family: 18px Reaver, serif;
+  cursor: pointer;
+  top: 5px;
+}
+h2:hover {
+  color: rgb(123, 112, 48);
+}
+
+.right {
+  margin-left: 585px;
+  margin-top: 16px;
+}
+
+.right input {
+  height: 30px;
+  background: transparent;
+  border-bottom: 1px solid #eff4f4;
+  border-radius: 15px;
+  color: rgb(226, 223, 201);
+}
+.right button {
+  height: 35px;
+  width: 100px;
+  background: transparent;
+  border-bottom: 1px solid #f4f1f1;
+  border-radius: 16px;
+  color: #ffffff;
+}
+.right button:hover {
+  background-color: rgb(123, 112, 48);
+}
+/* -------navbar end----------------- */
+/* ----------video---------------------*/
+#myVideo {
+  z-index: auto;
+  right: 0;
+  bottom: 0;
+  height: 641px;
+  min-width: 100%;
+}
+.content h1 {
+  color: rgba(226, 218, 206, 0.5647058824);
+}
+.content p {
+  font-size: 18px;
+  color: rgba(226, 218, 206, 0.5647058824);
+}
+.content {
+  position: absolute;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 1511px;
+  margin-bottom: 100px;
+}
+/* --------------video end---------------------- */
+
+/*------------------style for pause play-----------------*/
+#myBtn {
+  width: 200px;
+  font-size: 18px;
+  padding: 10px;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 16px;
+}
+#sam2 {
+  display: flex;
+  width: 1511px;
+}
+#myBtn:hover {
+  background: #ddd;
+  color: black;
+}
+/* ----------------end pause and play-------------------- */
+/* -----------------page slide heroes---------------------------- */
+.clear {
+  clear: both;
+}
+img {
+  max-width: 100%;
+  border: 0px;
+}
+ul,
+ol {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+  outline: none;
+  transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+}
+a:focus,
+a:active,
+a:visited,
+a:hover {
+  text-decoration: none;
+  outline: none;
+}
+a:hover {
+  color: #e73700;
+}
+h2 {
+  margin-bottom: 48px;
+  padding-bottom: 16px;
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 700;
+  position: relative;
+  text-transform: capitalize;
+}
+h3 {
+  margin: 0 0 10px;
+  font-size: 28px;
+  line-height: 36px;
+}
+button {
+  outline: none !important;
+}
+
+.line-title {
+  position: relative;
+  width: 400px;
+}
+.line-title::before,
+.line-title::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 4px;
+  border-radius: 2px;
+}
+.line-title::before {
+  width: 100%;
+  background: #f2f2f2;
+}
+.line-title::after {
+  width: 32px;
+  background: #e73700;
+}
+.game-section {
+  display: flex;
+  flex-flow: column wrap;
+}
+.game-section .item {
+  margin: 0 15px 60px;
+  width: 320px;
+  height: 400px;
+  display: flex;
+  display: -webkit-flex;
+  align-items: flex-end;
+  -webkit-align-items: flex-end;
+  background: #343434 no-repeat center center / cover;
+  border-radius: 16px;
+  overflow: hidden;
+  position: relative;
+  transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  cursor: pointer;
+}
+.game-section .item.active {
+  width: 500px;
+  box-shadow: 12px 40px 40px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 12px 40px 40px rgba(0, 0, 0, 0.25);
+}
+.game-section .item:after {
+  content: "";
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+}
+.game-section .item-desc {
+  padding: 0 24px 12px;
+  color: #fff;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  transform: translateY(calc(100% - 54px));
+  -webkit-transform: translateY(calc(100% - 54px));
+  transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+}
+.game-section .item.active .item-desc {
+  transform: none;
+  -webkit-transform: none;
+}
+.game-section .item-desc p {
+  opacity: 0;
+  -webkit-transform: translateY(32px);
+  transform: translateY(32px);
+  transition: all 0.4s ease-in-out 0.2s;
+  -webkit-transition: all 0.4s ease-in-out 0.2s;
+}
+.game-section .item.active .item-desc p {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+}
+.game-section .owl-theme.custom-carousel .owl-dots {
+  margin-top: -20px;
+  position: relative;
+  z-index: 5;
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  h2 {
+    margin-bottom: 32px;
+  }
+  h3 {
+    margin: 0 0 8px;
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  .game-section {
+    padding: 50px 30px;
+  }
+  .game-section .item {
+    margin: 0 12px 60px;
+    width: 260px;
+    height: 360px;
+  }
+  .game-section .item.active {
+    width: 400px;
+  }
+  .game-section .item-desc {
+    transform: translateY(calc(100% - 46px));
+    -webkit-transform: translateY(calc(100% - 46px));
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  h2 {
+    margin-bottom: 32px;
+  }
+  h3 {
+    margin: 0 0 8px;
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .line-title {
+    width: 330px;
+  }
+
+  /* -------- Landing page ------- */
+  .game-section {
+    padding: 50px 30px 40px;
+  }
+  .game-section .item {
+    margin: 0 12px 60px;
+    width: 240px;
+    height: 330px;
+  }
+  .game-section .item.active {
+    width: 360px;
+  }
+  .game-section .item-desc {
+    transform: translateY(calc(100% - 42px));
+    -webkit-transform: translateY(calc(100% - 42px));
+  }
+}
+
+@media (max-width: 767px) {
+  body {
+    font-size: 14px;
+  }
+  h2 {
+    margin-bottom: 20px;
+  }
+  h3 {
+    margin: 0 0 8px;
+    font-size: 19px;
+    line-height: 24px;
+  }
+  .line-title {
+    width: 250px;
+  }
+  .game-section {
+    padding: 30px 15px 20px;
+  }
+  .game-section .item {
+    margin: 0 10px 40px;
+    width: 200px;
+    height: 280px;
+  }
+  .game-section .item.active {
+    width: 270px;
+    box-shadow: 6px 10px 10px rgba(0, 0, 0, 0.25);
+    -webkit-box-shadow: 6px 10px 10px rgba(0, 0, 0, 0.25);
+  }
+  .game-section .item-desc {
+    padding: 0 14px 5px;
+    transform: translateY(calc(100% - 42px));
+    -webkit-transform: translateY(calc(100% - 42px));
+  }
+}
+
+/* ----------end page slide heroes--------------------------------- */
+.choseHero {
+  display: flex;
+  flex-direction: column;
+}
+.choseHero img {
+  width: 1550px;
+}
+.choseHero span {
+  margin-left: 420px;
+  font-size: 80px;
+  color: rgba(226, 218, 206, 0.5647058824);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+#spanChose {
+  margin-left: 550px;
+}
+/* -------------modal for registr ------------------- */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 10;
+}
+
+.modal-content {
+  background-color: #fff;
+  width: 300px;
+  padding: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 5px;
+}
+
+.close {
+  float: right;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+/* -----------------finish modal registr---------------- */
+/* -----------------btnaddhero */
+#openModalBtnAdd {
+  visibility: hidden;
+  margin-left: 670px;
+  width: 80px;
+  height: 30px;
+  border-radius: 16px;
+  color: black;
+  background-color: rgb(205, 195, 135);
+  margin-bottom: 25px;
+}
+/* ---------------start my Heroes card ------------------- */
+
+.cardMyheroes {
+  width: 220px;
+  height: 300px;
+  border-radius: 30px;
+  background: #212121;
+  box-shadow: 15px 15px 25px rgb(25, 25, 25), -15px -15px 30px rgb(60, 60, 60);
+}
+.edit_btn {
+  background-color: #e73700;
+  color: #ddd;
+  border-radius: 12px;
+}
+.delete_btn {
+  background-color: #e73700;
+  color: #ddd;
+  border-radius: 12px;
+}
+.cardMyheroes h3 {
+  color: rgb(205, 195, 135);
+  margin-left: 30px;
+}
+.cardMyheroes h4 {
+  color: rgb(205, 195, 135);
+  margin-left: 50px;
+  font-size: 20px;
+}
+
+.cardMyheroes img {
+  height: 100px;
+  width: 150px;
+}
+.cardMyheroes .edit_btn {
+  margin-left: 45px;
+}
+#categoryCard {
+  color: rgb(205, 195, 135);
+  margin-left: 45px;
+}
+/* end my heroes card */
+/* style card */
+.card_hero_crud {
+  display: flex;
+  flex-direction: row;
+}
+.container_card {
+  display: flex;
+  max-width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 40px;
+}
+/* end style */
+/* PAgination */
+.pagination {
+  display: inline-block;
+}
+
+.pagination button {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+}
+/* PAgination end  */
+/* radio button */
+.radio-inputs {
+  margin-left: 560px;
+  margin-bottom: 50px;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 0.5rem;
+  background-color: rgb(205, 195, 135);
+  box-sizing: border-box;
+  box-shadow: 0 0 0px 1px rgba(0, 0, 0, 0.06);
+  padding: 0.25rem;
+  width: 300px;
+  font-size: 14px;
+}
+
+.radio-inputs .radio {
+  flex: 1 1 auto;
+  text-align: center;
+}
+
+.radio-inputs .radio input {
+  display: none;
+}
+
+.radio-inputs .radio .name {
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.5rem;
+  border: none;
+  padding: 0.5rem 0;
+  color: rgba(51, 65, 85, 1);
+  transition: all 0.15s ease-in-out;
+}
+
+.radio-inputs .radio input:checked + .name {
+  background-color: rgb(205, 195, 135);
+  font-weight: 600;
+}
+/* radio end */
+.edit_btn {
+  visibility: hidden;
+}
+.delete_btn {
+  visibility: hidden;
+}
+/* -------Pagination------------- */
+.pagination {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+.page-number {
+  background-color: rgb(205, 195, 135);
+  margin-left: 20px;
+}
+#pagBtnPrew {
+  background-color: rgb(205, 195, 135);
+  border-radius: 10px;
+}
+#pagBtnNext {
+  background-color: rgb(205, 195, 135);
+  border-radius: 10px;
+}
+/* ----------Pagination end */
+/* info modal */
+
+.modalInfo {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 300px;
+  height: 300px;
+  background-color: gray;
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+  margin-left: 580px;
+  margin-top: 200px;
+}
+
+.modal p {
+  color: #fff;
+  font-size: 16px;
+}
+
+.close-modal {
+  background-color: #fff;
+  color: #000;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+/*  */
+#infoCard {
+  color: gold;
+  margin-left: 50px;
+}
